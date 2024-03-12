@@ -26,5 +26,6 @@ def reproduce(output):
 
 text: str = input("Type here your text: ").lower()
 output = convert(text=text)
-print("".join(output))
+morse_text = "".join(output)
+print(morse_text)
 reproduce(output=output)
