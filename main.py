@@ -18,8 +18,10 @@ def reproduce(output):
     dash = AudioSegment.from_wav("sounds/dash1.wav")
     for word in output:
         for simbol in word:
-            if simbol == "▄":
+            if simbol == ".":
                 play(dot)
+            elif simbol == "-":
+                play(dash)
 
 
 text: str = input("Type here your text: ").lower()
